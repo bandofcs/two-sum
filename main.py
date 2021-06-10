@@ -1,9 +1,9 @@
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
         new_dict={}
-        for i in range(len(nums)):
-            if nums[i] in new_dict:
-                return [new_dict[nums[i]],i]
+        for j in range(len(nums)):
+            if nums[j] in new_dict:
+                return [new_dict[nums[j]],j]
             else:
-                newkey=target-nums[i]
-                new_dict[newkey]=i  
+                newkey=target-nums[j]
+                new_dict[newkey]=j 
